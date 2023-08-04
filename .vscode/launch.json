@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+            "type": "node",
+            "request": "launch",
+            "name": "index.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/index.js",
+            "args": ["/home/pawel/rtk/11.07/rover_usb_0711_1649.ubx", "-s","MAH100IRL",
+             "-o", "/home/pawel/rtk/11.07/MAH100IRL_R_20231920000_01D_30S_MO.crx",
+             "-n", "/home/pawel/rtk/11.07/MAH100IRL_R_20231920000_01D_EN.rnx",
+             "-n", "/home/pawel/rtk/11.07/MAH100IRL_R_20231920000_01D_GN.rnx",
+             "-n", "/home/pawel/rtk/11.07/MAH100IRL_R_20231920000_01D_RN.rnx",
+             "-n", "/home/pawel/rtk/11.07/MAH100IRL_R_20231920000_01D_CN.rnx",            
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "rnx2rtkp.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/rnx2rtkp.js"
+        }
+    ]
+}

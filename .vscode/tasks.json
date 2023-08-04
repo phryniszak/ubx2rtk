@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+            "label": "zip",
+            "type": "shell",
+            "command": "zip",
+            "args": [
+                "-r",
+                "~/${workspaceFolderBasename}.zip",
+                "${workspaceFolder}",
+                "-x",
+                "*/node_modules/*"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo ${workspaceFolder}/ipch/\\*"
+        }
+    ]
+}
